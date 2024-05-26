@@ -48,6 +48,7 @@ public class CustomerService {
         Customer customer = populateCustomerEntity(customerData);
         customerRepository.save(customer);
         try {
+            log.info("添加日志111");
             demoService.test();
         } catch (Exception e) {
 //            throw new RuntimeException(e);
