@@ -27,12 +27,12 @@ public class CustomerController {
   }
 
   @PostMapping("/update")
-  public String updateName(@RequestBody CustomerData customerData) throws InterruptedException {
+  public String updateName(@RequestBody CustomerData customerData) {
     return "success";
   }
 
   @GetMapping("/list")
-  public String list() throws InterruptedException {
+  public String list() {
     customerService.list();
     return "success";
   }
